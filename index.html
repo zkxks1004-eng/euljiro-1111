@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#ffffff">
 <title>11.11 을지로</title>
 <meta property="og:title" content="11.11 을지로">
-<meta property="og:description" content="11월 11일 수요일, 을지로에서 만나요.">
+<meta property="og:description" content="11월 11일 수요일, 을지로에서 3년 만에 다시 모입니다.">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
 :root{--bg:#fff;--alt:#f5f5f7;--ink:#1d1d1f;--ink2:#6e6e73;--ink3:#86868b;--line:#e8e8ed;--r:26px}
@@ -74,10 +74,22 @@ section.alt .stop{background:#fff}
 
 /* 안내 */
 .info{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
-.info div{background:var(--alt);border-radius:20px;padding:24px}
+.info div{background:#fff;border-radius:20px;padding:24px}
 section.alt .info div{background:#fff}
 .info b{display:block;font-size:18px;letter-spacing:-.02em;margin-bottom:6px}
 .info span{color:var(--ink2);font-size:15px}
+
+.picks{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:40px}
+.pick{display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:4px;align-items:baseline;text-decoration:none;color:var(--ink);
+  background:var(--alt);border-radius:22px;padding:24px;transition:transform .25s,box-shadow .25s}
+.pick:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.pick .no{grid-row:1/4;font-size:40px;font-weight:700;letter-spacing:-.04em;line-height:1;color:var(--ink)}
+.pick b{font-size:22px;letter-spacing:-.03em}
+.pick .kind{grid-column:2;font-size:14px;font-weight:600;color:var(--ink2);margin-top:-2px}
+.pick .desc{grid-column:2;font-size:15px;color:var(--ink2);margin-top:6px}
+.pick .meta{grid-column:2;font-size:13px;font-weight:600;margin-top:10px;justify-self:start;background:#fff;border-radius:8px;padding:4px 10px}
+.note{color:var(--ink3);font-size:13px;margin-top:16px}
+@media (max-width:760px){.picks{grid-template-columns:1fr;margin-top:28px}.pick{padding:20px}.pick .no{font-size:34px}}
 
 footer{background:var(--alt);padding:28px 0 56px;color:var(--ink3);font-size:12px;line-height:1.7;border-top:1px solid var(--line)}
 
@@ -105,70 +117,99 @@ footer{background:var(--alt);padding:28px 0 56px;color:var(--ink3);font-size:12p
 <body>
 
 <header class="nav" id="nav"><div class="wrap">
-  <b>11.11 을지로</b>
-  <nav><a href="#plan">일정</a><a href="#spots">장소</a><a href="#info">안내</a></nav>
+  <b>11.11 Euljiro</b>
+  <nav><a href="#plan">일정</a><a href="#spots">장소</a><a href="#vote">저녁 식사</a><a href="#info">안내</a></nav>
 </div></header>
 
 <div class="hero">
-  <img src="img/alley.jpg" alt="밤의 을지로 노가리 골목">
+  <img src="img/alley.jpg" alt="밤의 을지로 골목">
   <div class="wrap">
-    <p class="eyebrow">11월 11일 수요일</p>
-    <h1>을지로에서<br>만나요.</h1>
-    <p>3년 만의 모임.</p>
-    <div class="chips"><span class="chip">15:00 시작</span><span class="chip">을지로3가역</span><span class="chip">늦게 와도 OK</span></div>
+    <p class="eyebrow">2026. 11. 11 Wed</p>
+    <h1>을지로,<br>오랜만에.</h1>
+    <p>3년 만에 다시 모이는 저녁.</p>
+    <div class="chips"><span class="chip">15:00</span><span class="chip">을지로3가역</span><span class="chip">5명</span></div>
   </div>
 </div>
 
 <section id="plan"><div class="wrap">
   <p class="eyebrow rv">한눈에</p>
-  <h2 class="rv">오늘 일정.</h2>
-  <p class="lede rv">시간 되는 만큼 오면 돼요. 저녁만 와도 괜찮아요.</p>
+  <h2 class="rv">일정.</h2>
+  <p class="lede rv">오후 일정은 자유롭게 함께하고, 저녁 식사부터는 모두 모입니다.</p>
   <div class="glance rv">
     <ol>
-      <li><time>15:00</time><div><div class="t">카페에서 만나기</div><div class="d">을지로 골목 카페</div></div><span class="tag">낮</span></li>
-      <li><time>16:00</time><div><div class="t">세운상가 옥상</div><div class="d">종묘·남산 전망, 단체 사진</div></div><span class="tag">낮</span></li>
-      <li><time>17:00</time><div><div class="t">청계천 → 광장시장</div><div class="d">걸으면서 구경, 간단히 맛보기</div></div><span class="tag">낮</span></li>
-      <li><time>18:30</time><div><div class="t">1차 저녁</div><div class="d">을지로 노포</div></div><span class="tag main">메인</span></li>
-      <li><time>20:30</time><div><div class="t">2차 노가리 골목</div><div class="d">생맥주</div></div><span class="tag">밤</span></li>
-      <li><time>22:00</time><div><div class="t">3차 바</div><div class="d">가고 싶은 사람만</div></div><span class="tag">선택</span></li>
+      <li><time>15:00</time><div><div class="t">카페</div><div class="d">을지로 골목의 카페에서 첫 만남</div></div><span class="tag">오후</span></li>
+      <li><time>16:00</time><div><div class="t">세운상가 옥상</div><div class="d">종묘와 남산을 내려다보는 전망</div></div><span class="tag">오후</span></li>
+      <li><time>17:00</time><div><div class="t">청계천 · 광장시장</div><div class="d">물길을 따라 산책</div></div><span class="tag">오후</span></li>
+      <li><time>18:30</time><div><div class="t">저녁 식사</div><div class="d">장소는 아래에서 함께 정합니다</div></div><span class="tag main">전원</span></li>
+      <li><time>20:30</time><div><div class="t">을지로 맥주 골목</div><div class="d">골목 야외 테이블에서 한잔</div></div><span class="tag">저녁</span></li>
+      <li><time>22:00</time><div><div class="t">바</div><div class="d">원하는 분들과 조용히 마무리</div></div><span class="tag">선택</span></li>
     </ol>
   </div>
 </div></section>
 
 <section id="spots" class="alt"><div class="wrap">
   <p class="eyebrow rv">장소</p>
-  <h2 class="rv">어디로 가요.</h2>
+  <h2 class="rv">장소.</h2>
   <div class="stops">
     <article class="stop rv">
       <div class="ph"><img src="img/printing.jpg" alt="을지로 인쇄 골목"></div>
-      <div class="tx"><div class="tm">15:00</div><h3>골목 카페</h3><p>인쇄소 골목 사이 오래된 건물 2~3층 카페에서 먼저 모여요.</p><span class="tbd">장소 정해지면 업데이트</span></div>
+      <div class="tx"><div class="tm">15:00</div><h3>골목 카페</h3><p>인쇄소 골목 사이, 오래된 건물 위층의 조용한 카페.</p><span class="tbd">장소 확정 후 안내</span></div>
     </article>
     <article class="stop rv">
       <div class="ph"><img src="img/jongmyo.jpg" alt="가을의 종묘"></div>
-      <div class="tx"><div class="tm">16:00</div><h3>세운상가 옥상</h3><p>옥상 전망대에서 종묘와 남산이 한눈에 보여요. 단체 사진은 여기서.</p><a class="map" href="https://map.naver.com/p/search/%EC%84%B8%EC%9A%B4%EC%83%81%EA%B0%80" target="_blank" rel="noopener">지도 보기</a></div>
+      <div class="tx"><div class="tm">16:00</div><h3>세운상가 옥상</h3><p>옥상 전망대에서 종묘의 숲과 남산이 한눈에 들어옵니다.</p><a class="map" href="https://map.naver.com/p/search/%EC%84%B8%EC%9A%B4%EC%83%81%EA%B0%80" target="_blank" rel="noopener">지도 보기</a></div>
     </article>
     <article class="stop rv">
       <div class="ph"><img src="img/cheonggye.jpg" alt="밤의 청계천"></div>
-      <div class="tx"><div class="tm">17:00</div><h3>청계천</h3><p>세운상가에서 광장시장까지 물길 따라 걸어요.</p><a class="map" href="https://map.naver.com/p/search/%EC%B2%AD%EA%B3%84%EC%B2%9C" target="_blank" rel="noopener">지도 보기</a></div>
+      <div class="tx"><div class="tm">17:00</div><h3>청계천</h3><p>세운상가에서 광장시장까지, 물길을 따라 걷는 길.</p><a class="map" href="https://map.naver.com/p/search/%EC%B2%AD%EA%B3%84%EC%B2%9C" target="_blank" rel="noopener">지도 보기</a></div>
     </article>
     <article class="stop rv">
       <div class="ph"><img src="img/gwangjang.jpg" alt="광장시장 입구"></div>
-      <div class="tx"><div class="tm">17:30</div><h3>광장시장</h3><p>빈대떡, 마약김밥 정도만 가볍게. 저녁 배는 남겨 두기.</p><a class="map" href="https://map.naver.com/p/search/%EA%B4%91%EC%9E%A5%EC%8B%9C%EC%9E%A5" target="_blank" rel="noopener">지도 보기</a></div>
+      <div class="tx"><div class="tm">17:30</div><h3>광장시장</h3><p>백 년 넘은 시장. 빈대떡 한 장 정도로 가볍게 둘러봅니다.</p><a class="map" href="https://map.naver.com/p/search/%EA%B4%91%EC%9E%A5%EC%8B%9C%EC%9E%A5" target="_blank" rel="noopener">지도 보기</a></div>
     </article>
     <article class="stop wide rv">
-      <div class="ph"><img src="img/alley.jpg" alt="을지로 노가리 골목의 밤"></div>
-      <div class="tx"><div class="tm">18:30 · 20:30</div><h3>1차 노포 → 2차 노가리 골목</h3><p>저녁은 을지로 노포에서 오래 앉아 이야기하고, 2차는 을지로3가 노가리 골목 야외 테이블에서 생맥주.</p><span class="tbd">1차 식당 예약 후 업데이트</span><a class="map" href="https://map.naver.com/p/search/%EC%9D%84%EC%A7%80%EB%A1%9C%20%EB%85%B8%EA%B0%80%EB%A6%AC%EA%B3%A8%EB%AA%A9" target="_blank" rel="noopener">노가리 골목 지도</a></div>
+      <div class="ph"><img src="img/alley.jpg" alt="을지로 맥주 골목의 밤"></div>
+      <div class="tx"><div class="tm">18:30 · 20:30</div><h3>저녁 식사, 그리고 맥주 골목</h3><p>저녁은 오래 앉아 이야기 나누기 좋은 곳에서. 이어서 을지로3가 맥주 골목의 야외 테이블로 옮깁니다.</p><span class="tbd">저녁 식사 장소는 아래에서 선택</span><a class="map" href="https://map.naver.com/p/search/%EC%9D%84%EC%A7%80%EB%A1%9C%20%EB%85%B8%EA%B0%80%EB%A6%AC%EA%B3%A8%EB%AA%A9" target="_blank" rel="noopener">맥주 골목 지도</a></div>
     </article>
   </div>
 </div></section>
 
-<section id="info"><div class="wrap">
+<section id="vote"><div class="wrap">
+  <p class="eyebrow rv">18:30</p>
+  <h2 class="rv">저녁 식사.</h2>
+  <p class="lede rv">네 곳 중 마음에 드는 곳의 번호를 단체 대화방에 남겨 주세요. 가장 많이 선택된 곳으로 예약합니다.</p>
+  <div class="picks rv">
+    <a class="pick" href="https://map.naver.com/p/search/%EC%9D%84%EC%A7%80%EB%A1%9C%20%EC%9B%90%EB%91%90%EB%A7%89" target="_blank" rel="noopener">
+      <span class="no">1</span><b>원두막</b><span class="kind">한식 코스</span>
+      <span class="desc">그날의 재료로 차려 내는 한식 코스. 대화에 온전히 집중할 수 있는 자리.</span>
+      <span class="meta">1인 5~6만 원대 · 일주일 전 예약</span>
+    </a>
+    <a class="pick" href="https://map.naver.com/p/search/%EC%82%B0%EC%B2%AD%EC%88%AF%EB%B6%88%EA%B0%80%EB%93%A0%20%EC%9D%84%EC%A7%80%EB%A1%9C" target="_blank" rel="noopener">
+      <span class="no">2</span><b>산청숯불가든</b><span class="kind">흑돼지 숯불구이</span>
+      <span class="desc">경남 산청 흑돼지를 참숯에 구워 내는 고깃집.</span>
+      <span class="meta">메뉴와 가격은 지도에서 확인</span>
+    </a>
+    <a class="pick" href="https://map.naver.com/p/search/%EC%9D%84%EC%A7%80%EB%A1%9C%20%EC%B2%A0%EC%B2%A0%EB%B3%B5%EC%A7%91" target="_blank" rel="noopener">
+      <span class="no">3</span><b>철철복집</b><span class="kind">복 요리</span>
+      <span class="desc">오랜 시간 자리를 지켜 온 복 요리 전문점. 복 소금구이가 대표 메뉴.</span>
+      <span class="meta">1인 4만 원대</span>
+    </a>
+    <a class="pick" href="https://map.naver.com/p/search/%EC%9D%84%EC%A7%80%EB%A1%9C%20%ED%99%A9%EA%B8%88%EB%A7%88%EC%B0%A8" target="_blank" rel="noopener">
+      <span class="no">4</span><b>황금마차</b><span class="kind">한식 주점</span>
+      <span class="desc">숯불구이와 육전 등 다양한 한식 요리를 함께 즐길 수 있는 곳.</span>
+      <span class="meta">메뉴와 가격은 지도에서 확인</span>
+    </a>
+  </div>
+  <p class="note rv">가격은 이전 정보 기준으로 달라질 수 있습니다. 각 항목을 누르면 지도가 열립니다.</p>
+</div></section>
+
+<section id="info" class="alt"><div class="wrap">
   <p class="eyebrow rv">안내</p>
-  <h2 class="rv">알아 두기.</h2>
+  <h2 class="rv">안내.</h2>
   <div class="info rv">
-    <div><b>모이는 곳</b><span>을지로3가역 (2·3호선). 정확한 장소는 단톡방에 공지할게요.</span></div>
-    <div><b>늦게 와도 OK</b><span>낮 일정은 자유. 18:30 저녁부터 와도 돼요. 오는 시간만 단톡방에 알려 주세요.</span></div>
-    <div><b>11.11</b><span>빼빼로데이. 하나씩 들고 오면 좋아요.</span></div>
+    <div><b>모이는 곳</b><span>을지로3가역 (2·3호선). 정확한 장소는 단체 대화방으로 안내합니다.</span></div>
+    <div><b>합류 시간</b><span>오후 일정은 자유 참석입니다. 저녁 식사부터 오셔도 괜찮으니 도착 시간만 알려 주세요.</span></div>
+    <div><b>예약</b><span>저녁 식사 장소는 선택이 모이는 대로 바로 예약합니다.</span></div>
   </div>
 </div></section>
 
